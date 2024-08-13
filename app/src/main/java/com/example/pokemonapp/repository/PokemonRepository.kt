@@ -1,5 +1,7 @@
 package com.example.pokemonapp.repository
 
+import android.content.Context
+import coil.ImageLoader
 import com.example.pokemonapp.data.PokemonApi
 import com.example.pokemonapp.model.PokemonModels
 import javax.inject.Inject
@@ -40,4 +42,5 @@ class PokemonRepository @Inject constructor(private val pokemonApi: PokemonApi){
     private fun getAvatar(id: Int): String {
         return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/$id.png"
     }
+
 }
